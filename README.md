@@ -4,7 +4,7 @@ Use this to convert weights of a downloaded huggingface model from safetensors t
 
 python -c "
 import json
-path = '/home/rdx/.cache/huggingface/hub/models--{model name}/blobs/{full file name}'
+path = '~/.cache/huggingface/hub/models--{model name}/blobs/{full file name}'
 with open(path, 'rb') as f:
     n = int.from_bytes(f.read(8), 'little')
     print(json.dumps(json.loads(f.read(n)), indent=2))
