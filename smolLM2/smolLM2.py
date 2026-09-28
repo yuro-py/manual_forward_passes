@@ -206,7 +206,7 @@ def forward(input_ids):
     return logits
 
 
-prompt = "Thanks for answering I am fine aswell"
+prompt = "How are u"
 input_ids = tok(
     prompt,
     return_tensors="pt",
